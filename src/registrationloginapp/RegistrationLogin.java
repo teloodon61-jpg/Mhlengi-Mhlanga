@@ -4,6 +4,7 @@
  */
 package registrationloginapp;
 import java.util.Scanner;
+
 /**
  *
  * @author Student
@@ -17,7 +18,7 @@ public class RegistrationLogin {
     
     public String registration(){
         String user = new String();
-        
+       
         System.out.println("Enter the username: ");
         username = input.nextLine();
       
@@ -46,7 +47,9 @@ public class RegistrationLogin {
                 System.out.println("Cellphone number is not correctly formated; please correct the number and try again.");
             }
         return "REGISTRATION SUCCESSFUL";
-    
+        
+        
+        
     }
         public static boolean checkUsername(String username){
             RegistrationLogin.username = username;
@@ -56,7 +59,7 @@ public class RegistrationLogin {
        else {
        }
           return false;
-    }
+        }
     
     public boolean checkPasswordComplexity(String password ){
        boolean length = password.length() >= 8;

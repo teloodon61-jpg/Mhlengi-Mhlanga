@@ -16,6 +16,7 @@ public class RegistrationLoginApp {
     public static void main(String []args){
         
         RegistrationLogin key = new RegistrationLogin();
+        Message kemy = new Message();
        
     System.out.println("REGISTRATION");
     System.out.println(key.registration());
@@ -23,6 +24,7 @@ public class RegistrationLoginApp {
     System.out.println("LOGIN");
     boolean loginStatus = key.loginPrompt();
     System.out.println(key.returnLoginStatus(loginStatus));
+    kemy.working();
     
     }
     
